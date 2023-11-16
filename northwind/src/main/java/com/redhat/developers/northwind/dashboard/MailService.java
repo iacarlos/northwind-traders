@@ -29,7 +29,7 @@ public class MailService {
   @WithSession
   public Uni<Order> sendOrder(short orderId) {
     return orderService.findById(orderId).map(order -> {
-      final String subject = "Order " + orderId + " must be shipped";
+      final String subject = "Order " + orderId + " must be shipped AHORAAA";
       final String orderDetails = order.orderDetails.stream()
         // Padding must be aligned with the details section of the EMAIL_TEMPLATE
         .map(od -> String.format("%-8s", od.productId) + "| " + od.quantity).collect(Collectors.joining("\n"))

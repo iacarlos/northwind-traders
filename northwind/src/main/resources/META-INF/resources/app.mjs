@@ -20,7 +20,7 @@ const App = () => html`
         <div className='flex items-center'>
           <${LightHouse} className='w-6 h-6 mr-1' />
           <h1 className='text-lg font-bold text-gray-800'>
-            Northwind traders
+            Northwind traders from OpenShift Dev Spaces he dicho
           </h1>
         </div>
       </${Header}>
